@@ -23,7 +23,7 @@ public class Review05 {
                     "root",
                     "12297iumzltoy");
 
-            String sql = "SELECT * FROM person WHERE id = ?";
+            String sql = "SELECT * FROM person WHERE id = ? LIMIT 1";
             pstmt = con.prepareStatement(sql);
             System.out.println("検索キーワードを入力してください>");
             int num = keyInNum();
